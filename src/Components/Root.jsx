@@ -1,8 +1,11 @@
+import { Outlet } from "react-router-dom";
+import Header from "./Header/Header";
+
 const Root = () => {
     return (
-        <div>
-            <h1>Hi</h1>
-            <h2>Hello</h2>
+        <div className="text-center">
+            <Header></Header>
+            <Outlet></Outlet>
         </div>
     );
 };
